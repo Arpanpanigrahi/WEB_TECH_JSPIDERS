@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NESTED TABLE</title>
+    <!-- <style>
+      table,
+      th,
+      td {
+        border: 2px solid palevioletred
+      }
+
+      .secondTable {
+        border-color: darkmagenta;
+      }
+
+      th,
+      td {
+        padding: 14px;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <table border="1px">
+      <tr>
+        <td>
+          <p>Table 1</p>
+        </td>
+        <td>
+          Table 1
+          <table class="secondTable" border="1px">
+            <tr>
+              <td class="secondTable">Table 2</td>
+              <td class="secondTable">Table 2</td>
+            </tr>
+            <tr class="firstTable">
+              <td class="secondTable">Table 2</td>
+
+              <td class="secondTable">Table 2</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          This contains a list
+          <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+          </ul>
+        </td>
+        <td>Table 1</td>
+      </tr>
+    </table>
+  </body>
+</html>
