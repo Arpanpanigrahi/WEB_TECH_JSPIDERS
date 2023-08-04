@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="../fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="../MDB/css/mdb.css">
+    <link rel="stylesheet" href="../MDB/css/style.css">
+</head>
+<body>
+	<!-- Main Navbar -->
+	<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+		<div class="container">
+			<a href="" class="navbar-brand text-warning">
+				<i class="fa fa-snowflake pr-2"></i>Jspiders Institute
+			</a>
+			<button class="navbar-toggler" data-target="#links" data-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="links">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link ">
+							<i class="fa fa-chart-bar pr-2 text-muted"></i>Dashboard
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="tasks.html" class="nav-link">
+							<i class="fa fa-list pr-2 text-muted"></i>Tasks
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="categories.html" class="nav-link ">
+							<i class="fa fa-sitemap pr-2 text-muted"></i>Categories
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="employees.html" class="nav-link ">
+							<i class="fa fa-users pr-2 text-muted"></i>Employees
+						</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a href="index.html" class="nav-link" data-toggle="dropdown">
+							<i class="fa fa-sign-in pr-2 text-muted"></i>Arpan
+						</a>
+						<div class="dropdown-menu">
+							<a href="profile.html" class="dropdown-item">
+								<i class="fa fa-user-circle pr-2"></i>Profile
+							</a>
+							<a href="settings.html" class="dropdown-item">
+								<i class="fa fa-cogs pr-2"></i>Settings
+							</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">
+							<i class="fa fa-sign-out pr-2 text-muted"></i>LogOut
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Dashboard Section -->
+	<section class="pr-2 bg-default">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="text-white">
+						<i class="fa fa-chart-bar"></i>Dashboard</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Dashboard Button Section -->
+	<section class="pr-2 bg-light">
+		<div class="container">
+			<div class="row p-3">
+				<div class="col-md-4">
+					<button class="btn btn-secondary btn-block"><i class="fa fa-plus-circle pr-2"></i>Add Task</button>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-success btn-block"><i class="fa fa-plus-circle pr-2"></i>Add Category</button>
+				</div>
+				<div class="col-md-4">
+					<button class="btn btn-warning btn-block"><i class="fa fa-plus-circle pr-2"></i>Add Employee</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Current Tasks -->
+	<section class="pr-2 mt-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="card">
+						<div class="card-header bg-primary">
+							<h1 class="text-white">Current Tasks</h1>
+						</div>
+						<div class="card-body bg-light">
+							<table class="table">
+								<thead class="bg-dark text-white">
+									<tr>
+										<th>SNO</th>
+										<th>NAME</th>
+										<th>EMAIL</th>
+										<th>TASK</th>
+										<th>LEVEL</th>
+										<th>CATEGORY</th>
+										<th>DETAILS</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Vimal</td>
+										<td>vimal@gmail.com</td>
+										<td>Eating Vimal</td>
+										<td>High</td>
+										<td>Developement</td>
+										<td>
+											<a href="#" class="btn btn-sm btn-outline-dark">Details</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+					<div class="card-header bg-primary text-white text-center">
+						<div class="row align-items-center">
+							<div class="col">
+								<i class="fa fa-list fa-4x"></i>
+							</div>
+							<div class="col">
+								<h1 class="display-4">08</h1>
+								<p>Tasks</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-center">
+						<a href="">View Details <i class="fa-solid fa-circle-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="card mt-4">
+					<div class="card-header bg-secondary text-white text-center">
+						<div class="row align-items-center">
+							<div class="col">
+								<i class="fa fa-sitemap fa-4x"></i>
+							</div>
+							<div class="col">
+								<h1 class="display-4">08</h1>
+								<p>Categories</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-center">
+						<a href="">View Details <i class="fa-solid fa-circle-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="card mt-4">
+					<div class="card-header bg-warning text-white text-center">
+						<div class="row align-items-center">
+							<div class="col">
+								<i class="fa fa-users fa-4x"></i>
+							</div>
+							<div class="col">
+								<h1 class="display-4">08</h1>
+								<p>Employees</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer text-center">
+						<a href="">View Details <i class="fa-solid fa-circle-arrow-right"></i></a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Main Footer -->
+	<footer class="bg-dark text-center text-white">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2>CopyRights&copy;:2023,Jspiders.com</h2>
+					<p>All Rights Are Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- Script Code -->
+<script src="../MDB/js/jquery.js"></script>
+<script src="../MDB/js/popper.js"></script>
+<script src="../MDB/js/bootstrap.js"></script>
+<script src="../MDB/js/mdb.js"></script>
+</body>
+</html>
