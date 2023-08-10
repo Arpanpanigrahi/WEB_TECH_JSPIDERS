@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>by using new keyword</h1>
+    <script>
+        let obj = new Object()
+        obj.name = "utsav"
+        obj.print = function()
+        {
+            console.log(this.name)
+        }
+        // console.log(obj)
+        // console.log(obj.name)
+        // obj.print();
+
+        function Stu(name, add)
+        {
+            this.name=name,
+            this.add=add
+            this.print=function()
+            {
+                console.log('${this.name} and ${this.add}')
+            }
+        }
+        let obj1 = new Stu('utsav','delhi')
+        let obj2 = new Stu('kishor','ap')
+        console.log(obj1)
+        console.log(obj1.name)
+        obj1.print()
+        obj2.print()
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Literal</h1>
+    <script>
+        let student={
+            name:"utsav",
+            add:"delhi",
+            print:function()
+            {
+                console.log(this.name)
+            }
+        }
+        student.name="kishor"
+        student.print();
+        delete student.name
+        console.log(student)
+        // console.log(student)
+        // // reading
+        // // 1
+        // console.log(student.name)
+        // // 2
+        // console.log(student["name"])
+        // console.log(student.print)
+        // student.print();
+
+        // let x = prompt('Enter the key name');
+        // console.log(x, typeof x)
+        // console.log(student.x)
+        // vonsole.log(student[x])
+    </script>
+</body>
+</html>
