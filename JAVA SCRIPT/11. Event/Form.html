@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Password Check</h1>
+    <form>
+        userName <input class="abc xyz" type="text" placeholder="enter your username" id="uname" value=""/> <br/>
+        password <input type="password" placeholder="enter your password" id="pass" value=""/>
+        <button id="btn">Click</button>
+    </form>
+    <script>
+        let userName="utsav"
+        let password="1234567"
+        let btn=document.getElementById('btn')
+        let uname=document.getElementById('uname')
+        let pass=document.getElementById('pass')
+            btn.addEventListener('click',(event)=>{
+                event.preventDefault()
+
+                uname.classList.add('abcdefg')
+                uname.classList.remove('xyz')
+                console.log(uname.classList)
+                let ufn=uname.value;
+                let ufp=pass.value;
+                if(ufn==userName && ufp==password)
+                {
+                    alert('validate')
+                }
+                else
+                {
+                    alert('not validate')
+                }
+            })
+    </script>
+</body>
+</html>

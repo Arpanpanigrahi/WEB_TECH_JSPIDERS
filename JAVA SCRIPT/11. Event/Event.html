@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event and Event Object</h1>
+
+    <div id="color" style="border: 1px solid black; height:55px"></div>
+
+    <button id="btn">Click Here</button>
+    <script>
+        console.log('hello this side jsp')
+        let color=document.getElementById('color')
+        let btn=document.getElementById('btn')
+        console.log(color)
+        let count=1;
+        //click
+        btn.addEventListener('click',()=>{
+            count=count+2
+            console.log(count)
+            if(count==5)
+            {
+                color.style.backgroundColor="black"
+            }
+            else{
+                color.style.backgroundColor="red"
+            }
+        })
+        //mouseenter
+        btn.addEventListener("mouseenter",()=>{
+            console.log('hii i am mouse enter')
+        })
+    </script>
+</body>
+</html>
