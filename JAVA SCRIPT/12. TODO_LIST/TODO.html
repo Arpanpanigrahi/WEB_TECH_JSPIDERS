@@ -1,0 +1,98 @@
+<!-- project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1> hii <h>
+    <div class="container-fluid">
+        <h1 class="text-center text-primary">ToDo</h1>
+        <hr/>
+        <div class="row">
+            <div class="col">
+           <input type="text" placeholder="Enter your text"  id="text"/>
+           <button class="btn btn-primary" id="submit">ADD</button>
+            </div>
+        </div>
+        <hr/>
+        <div class="row " id="body">   
+        </div>
+    </div>
+       
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>     
+    
+    <script>
+       let text=document.getElementById('text')
+       let button=document.getElementById('submit')
+       let body=document.getElementById('body')
+       let gArr=[]
+       button.addEventListener('click',()=>{
+        let textData=text.value;
+          if(textData)
+          {
+            
+            let obj={
+                id:Math.trunc(Math.random()*100),
+                text:textData
+            }
+             gArr.push(obj)
+          }
+          else{
+            alert('add text')
+          }
+          text.value=""
+           print(gArr)
+       })
+       function print(arr)
+       {
+           //printing 
+           let x;
+           if(arr.length==0)
+           {
+              x="no data"
+           }
+           else{
+            x= arr.map((data)=>{
+                return ` <div class="col m-3">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <p class="text-white">${data.text}</p>
+                            <button class="btn btn-info">edit</button>
+                            <button class="btn btn-danger">delete</button>
+                        </div>
+                    </div>
+                </div>`
+               })
+           }
+           body.innerHTML=x
+         
+
+       }
+    </script>
+</body>
+</html>
+
+<!-- filter find map -->
+   <!-- let x= arr.filter((data)=>{
+          return data>3
+         })
+        
+        console.log('new arr',x)
+        console.log('actual arr',arr)
+
+       let x= arr.map((data,i,arr)=>{
+            console.log(`${data} and index value is ${i}`,arr)
+           return data*2
+        })
+
+       let arr=['java','mern','python','java']
+       let x=arr.find((data)=>{
+        return data==='java'
+       })
+       console.log(x) -->
+
