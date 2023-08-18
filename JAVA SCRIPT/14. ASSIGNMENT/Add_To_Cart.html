@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart Item Count Example</title>
+</head>
+<body>
+    <h1>Add to Cart</h1>
+    <button id="increaseButton">Increase Item Count</button>
+    <button id="decreaseButton">Decrease Item Count</button>
+    <div id="cartItemCount">Items in Cart: 0</div>
+
+    <script>
+        // Initialize the cart item count
+        let cartCount = 0;
+
+        // Get references to HTML elements
+        const increaseButton = document.getElementById('increaseButton');
+        const decreaseButton = document.getElementById('decreaseButton');
+        const cartItemCount = document.getElementById('cartItemCount');
+
+        // Add event listener to the "Increase Item Count" button
+        increaseButton.addEventListener('click', function() {
+            // Increment the cart item count
+            cartCount++;
+
+            // Update the cart item count in the HTML
+            cartItemCount.textContent = `Items in Cart: ${cartCount}`;
+        });
+
+        // Add event listener to the "Decrease Item Count" button
+        decreaseButton.addEventListener('click', function() {
+            // Make sure the cart count doesn't go below zero
+            if (cartCount > 0) {
+                // Decrement the cart item count
+                cartCount--;
+
+                // Update the cart item count in the HTML
+                cartItemCount.textContent = `Items in Cart: ${cartCount}`;
+            }
+        });
+    </script>
+</body>
+</html>
